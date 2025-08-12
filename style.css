@@ -23,16 +23,12 @@ body{
 }
 
 header {
-    position: fixed;      /* Fixa o elemento na tela */
-    top: 0;               /* Alinha no topo */
-    left: 0;              /* Alinha na esquerda */
-    width: 100%;          /* Faz ocupar 100% da largura da tela */
-    z-index: 1000;        /* Garante que ele fique acima de todo o conteúdo */
-    
-    /* Define um fundo para o modo escuro, para não ficar transparente */
+    position: fixed; 
+    top: 0; 
+    left: 0;    
+    width: 100%;
+    z-index: 1000;     
     background-color: #282C33; 
-    
-    /* Adiciona uma sombra sutil para dar profundidade */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,14 +37,12 @@ body[data-theme="light"] header {
 }
 
 nav {
-    max-width: 1200px; /* Define uma largura máxima para o conteúdo da nav */
-    margin: 0% 15%;    /* Centraliza a nav */
-    padding: 20px 40px; /* Adiciona espaçamento interno (vertical e horizontal) */
-
-    /* O resto das suas propriedades da nav continuam aqui */
+    max-width: 1200px; 
+    margin: 0% 15%;    
+    padding: 20px 40px; 
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Adicionado para melhor alinhamento vertical */
+    align-items: center; 
 }
 
 .logo{
@@ -288,31 +282,28 @@ nav {
 .projetos-container {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Espaço vertical entre cada projeto */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
+    gap: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .projetos-conteudo {
     display: flex;
-    align-items: center; /* Alinha verticalmente a imagem e o texto */
-    gap: 40px; /* Espaço entre a imagem e o bloco de texto */
+    align-items: center; 
+    gap: 40px;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     padding: 20px;
 }
 
-/* ---- A MÁGICA: Inverte a ordem para projetos pares ---- */
-/* Pega o segundo filho, o quarto, o sexto, etc. */
 .projetos-conteudo:nth-child(even) {
-    flex-direction: row-reverse; /* Inverte a direção do flex */
+    flex-direction: row-reverse;
 }
 
-/* ---- ESTILOS DA IMAGEM E DO TEXTO ---- */
 .projetos-conteudo-image {
     width: 50%; 
     max-width: 400px;
-    border-radius: 8px; /* Bordas levemente arredondadas */
+    border-radius: 8px; 
     object-fit: cover;
 }
 
@@ -320,9 +311,8 @@ nav {
     width: 50%; 
 }
 
-/* ---- ESTILOS DA TIPOGRAFIA ---- */
 .projetos-conteudo-texto-contador {
-    font-size: 4rem; /* Tamanho grande para o número */
+    font-size: 4rem; 
     font-weight: bold;
     color: var(--cor-auxiliar);
     margin-bottom: 10px;
@@ -331,24 +321,23 @@ nav {
 }
 
 .projetos-conteudo-texto-titulo {
-    font-size: 2.25rem; /* Título do projeto */
+    font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--cor-primaria); /* Título em branco puro para destaque */
+    color: var(--cor-primaria); 
     font-family: var(--fonte-family);
     font-weight: var(--fonte-peso-titulo);
 }
 
 .projetos-conteudo-texto-paragrafo {
     font-size: 1rem;
-    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    line-height: 1.6;
     margin-bottom: 30px;
     font-family: var(--fonte-family);
     font-weight: var(--fonte-peso-subtitulo);
     color: var(--cor-auxiliar);
 }
 
-/* ---- ESTILO DO LINK ---- */
 .projetos-conteudo-texto-link{
     text-decoration: none;
     color: var(--cor-terciaria);
@@ -369,77 +358,56 @@ nav {
     transform: translateY(-3px);
 }
 
-
-
-/* --- ESTILOS DO CARROSSEL (VERSÃO FINAL E CORRETA) --- */
-
 .carousel-container {
     position: relative;
     max-width: 900px;
     margin: 60px auto;
 }
 
-/* O trilho agora é um container de posicionamento e precisa de uma altura definida */
 .carousel-track {
     position: relative;
     width: 100%;
-    /* Defina uma altura que acomode bem seus certificados */
     height: 350px; 
-    /* Você pode ajustar essa altura conforme necessário */
 }
 
-/* TODOS os slides ficam empilhados no mesmo lugar */
 .carousel-item {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
-    /* Por padrão, os slides ficam invisíveis e pequenos no centro */
     opacity: 0;
     transform: scale(0.7);
     z-index: 1;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* A imagem dentro do slide */
 .carousel-item img {
     width: 100%;
     height: 100%;
-    /* 'contain' garante que a imagem inteira apareça sem ser cortada, mantendo a proporção */
     object-fit: contain; 
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para os 3 slides que ficam visíveis */
-
-/* 1. O SLIDE ATUAL (NO CENTRO) */
 .carousel-item.current-slide {
     opacity: 1;
     transform: scale(1);
-    z-index: 3; /* Fica na frente de todos */
+    z-index: 3; 
 }
 
-/* 2. O SLIDE ANTERIOR (NA ESQUERDA) */
 .carousel-item.prev-slide {
     opacity: 0.5;
-    /* Move 55% para a esquerda e diminui o tamanho */
     transform: translateX(-55%) scale(0.8);
     z-index: 2;
 }
 
-/* 3. O PRÓXIMO SLIDE (NA DIREITA) */
 .carousel-item.next-slide {
     opacity: 0.5;
-    /* Move 55% para a direita e diminui o tamanho */
     transform: translateX(55%) scale(0.8);
     z-index: 2;
 }
 
-
-/* Botões (mesmo estilo de antes) */
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -456,10 +424,9 @@ nav {
 .prev-button { left: 10px; }
 .next-button { right: 10px; }
 
-/* Navegação (mesmo estilo de antes) */
 .carousel-nav {
     position: absolute;
-    bottom: -40px; /* Coloca os pontos abaixo do carrossel */
+    bottom: -40px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -480,8 +447,6 @@ nav {
     margin-top: 50px; 
 }
 
-
-/* --- SEÇÃO DE CONTATO --- */
 .contact-section {
     width: 100%;
     max-width: 1300px;
@@ -495,9 +460,7 @@ nav {
 .contact-container {
     max-width: 1000px;
     display: grid;
-    /* Duas colunas de tamanho igual */
     grid-template-columns: 1fr 1fr; 
-    /* Espaço entre as colunas */
     gap: 100px;
     align-items: center;
     background-color: var(--cor-terciaria);
@@ -505,7 +468,6 @@ nav {
     border-radius: 8px;
 }
 
-/* --- COLUNA DA ESQUERDA: INFORMAÇÕES --- */
 .contact-info__image {
     width: 120px;
     height: 120px;
@@ -527,11 +489,11 @@ nav {
 
 .contact-info__description {
     color: var(--cor-primaria);
-    font-family: var(--fonte-family); /* Cinza um pouco mais escuro para o parágrafo */
+    font-family: var(--fonte-family); 
     font-weight: var(--fonte-peso-paragrafo);
     font-size: 1.0rem;
     line-height: 1.7;
-    max-width: 450px; /* Evita que o texto fique muito largo */
+    max-width: 450px; 
 }
 
 .contact-info__socials {
@@ -553,11 +515,10 @@ nav {
 }
 
 .social-link:hover {
-    background-color: #8A2BE2; /* Roxo do botão no hover */
+    background-color: #8A2BE2; 
     transform: translateY(-3px);
 }
 
-/* --- COLUNA DA DIREITA: FORMULÁRIO --- */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -568,7 +529,6 @@ nav {
     width: 100%;
 }
 
-/* Estilo para todos os campos de entrada */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -585,16 +545,15 @@ nav {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #8A2BE2; /* Borda roxa ao focar */
+    border-color: #8A2BE2; 
     box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.3);
 }
 
 .contact-form textarea {
-    resize: vertical; /* Permite que o usuário redimensione apenas na vertical */
+    resize: vertical; 
     min-height: 150px;
 }
 
-/* Classe para esconder labels, mas mantê-las para acessibilidade */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -612,7 +571,7 @@ nav {
     justify-content: center;
     gap: 10px;
     padding: 16px 32px;
-    background-color: var(--cor-secundaria); /* Roxo do botão */
+    background-color: var(--cor-secundaria); 
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 600;
@@ -620,54 +579,42 @@ nav {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    align-self: flex-start; /* Alinha o botão à esquerda */
+    align-self: flex-start; 
 }
 
 .submit-button:hover {
-    background-color: #9932CC; /* Roxo mais escuro no hover */
+    background-color: #9932CC; 
     transform: translateY(-2px);
 }
 
-
-
-/* --- DEFINIÇÃO DO TEMA CLARO --- */
-/* Quando o body tiver o atributo data-theme="light", essas variáveis serão aplicadas */
 body[data-theme="light"] {
-    --cor-primaria: #282C33; /* Texto principal escuro */
-    --cor-secundaria: #8A2BE2; /* Roxo um pouco mais escuro para melhor contraste */
-    --cor-terciaria: #188654; /* Verde mais escuro */
-    --cor-auxiliar: #4a4a4a; /* Texto auxiliar mais escuro */
-    background-color: #F8F9FA; /* Fundo bem claro */
+    --cor-primaria: #282C33; 
+    --cor-secundaria: #8A2BE2; 
+    --cor-auxiliar: #4a4a4a; 
+    background-color: #F8F9FA;
 }
 
-/* Estilo principal do logo - controla a cor do SVG e do SPAN */
 .logo {
     text-decoration: none;
-    /* Define a cor padrão para o tema escuro (herdada pelo SVG e pelo SPAN) */
     color: var(--cor-primaria); 
     font-family: var(--fonte-family);
     font-size: 16px;
     font-weight: var(--fonte-peso-titulo);
-    
-    /* Melhora o alinhamento entre o ícone e o texto */
     display: flex; 
     align-items: center;
     gap: 8px;
 }
 
-/* Define a cor do logo para o TEMA CLARO */
+
 body[data-theme="light"] .logo {
-    /* Altera a cor no tema claro (herdada pelo SVG e pelo SPAN) */
     color: var(--cor-secundaria); 
 }
 
-/* Você pode manter um estilo para a classe se precisar de ajustes de tamanho */
 .logo-img {
     width: 16px;
     height: 16px;
 }
 
-/* --- ESTILO PARA O BOTÃO DE TEMA --- */
 .theme-toggle-button {
     background: none;
     border: none;
@@ -675,7 +622,7 @@ body[data-theme="light"] .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cor-terciaria); /* Cor inicial do ícone */
+    color: var(--cor-terciaria); 
     border-radius: 50%;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -690,16 +637,14 @@ body[data-theme="light"] .logo {
     height: 20px;
 }
 
-/* Lógica de visibilidade dos ícones */
 .moon-icon {
-    display: none; /* Lua escondida por padrão (no tema claro) */
+    display: none; 
 }
 
 .sun-icon {
-    display: block; /* Sol visível por padrão (no tema claro) */
+    display: block; 
 }
 
-/* Quando o tema for escuro (padrão), escondemos o sol e mostramos a lua */
 body:not([data-theme="light"]) .theme-toggle-button .sun-icon {
     display: none;
 }
@@ -707,9 +652,6 @@ body:not([data-theme="light"]) .theme-toggle-button .moon-icon {
     display: block;
 }
 
-
-/* --- AJUSTES PONTUAIS PARA O TEMA CLARO --- */
-/* Alguns elementos podem precisar de ajustes específicos para o tema claro */
 body[data-theme="light"] .botao-social {
     color: var(--cor-terciaria);
 }
@@ -724,7 +666,7 @@ body[data-theme="light"] .projetos-conteudo {
 }
 
 body[data-theme="light"] .contact-container {
-    background-color: #e9ecef; /* Cor de fundo do container de contato no tema claro */
+    background-color: #e9ecef; 
 }
 
 body[data-theme="light"] .contact-info__heading {
