@@ -194,6 +194,13 @@
     margin-top: 50px; 
 }
 
+.certificados-botao img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(69%) sepia(12%) saturate(834%) hue-rotate(63deg) brightness(93%) contrast(88%);
+}
+
 .contact-section {
     width: 100%;
     max-width: 1300px;
