@@ -27,12 +27,12 @@ const translations = {
         about_text_2: "Minha curiosidade me impulsiona a aprender continuamente e a explorar novas tecnologias. Atualmente, busco uma oportunidade para aplicar meu conhecimento técnico, colaborar com equipes inovadoras e contribuir para projetos desafiadores que gerem um impacto real.",
 
         // Projetos (substitua pelo texto real dos seus projetos)
-        project_01_title: "projeto 01",
-        project_01_desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit consequuntur laborum, quia consectetur, in laboriosam ipsa magnam culpa quaerat necessitatibus similique optio eligendi, minus est. Asperiores accusantium distinctio repellendus?",
+        project_01_title: "Jogo: Autism World",
+        project_01_desc: "Jogo psicoeducacional mobile desenvolvido em Flutter e Dart, com o objetivo de auxiliar no desenvolvimento cognitivo de crianças com TEA, trabalhando habilidades como memória, raciocínio lógico, entre outras. Este projeto foi apresentado como meu trabalho de conclusão de curso na graduação, e seu desenvolvimento foi documentado e registrado em um artigo que foi posteriormente publicado na revista REASE - Revista Ibero-Americana de Humanidades, Ciências e Educação.",
         project_02_title: "projeto 02",
         project_02_desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum id, inventore, veniam quidem tempora vero quas sit delectus reiciendis qui nulla odio ea ipsa dolor molestias necessitatibus aliquid ab.",
-        project_03_title: "projeto 03",
-        project_03_desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo nostrum nam ad cupiditate magnam vero molestiae fugit minus. A neque sunt dolorem, odit ex illum id ut exercitationem. Voluptates.",
+        project_03_title: "Alura Books",
+        project_03_desc: "Desenvolvido como parte da formação da Alura, o AluraBooks é um projeto que transforma uma página HTML estática em uma vitrine de livros interativa. Através de JavaScript, com funcionalidades para consumir dados de uma API simulada e renderizar os livros dinamicamente na tela. Foram utilizados métodos de array para criar filtros por categoria e calcular o valor total dos itens disponíveis, demonstrando na prática a poderosa capacidade do JavaScript de manipular o DOM e criar experiências de usuário responsivas.",
         project_04_title: "projeto 04",
         project_04_desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil dolore hic assumenda temporibus laboriosam doloremque, veritatis illum, commodi cupiditate quae placeat nesciunt totam facilis incidunt perferendis minima, reprehenderit voluptatum.",
         projects_link_text: "Ir para o projeto ",
