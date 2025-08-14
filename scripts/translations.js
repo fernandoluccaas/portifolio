@@ -1,5 +1,3 @@
-// translations.js - VERSÃO CORRIGIDA
-
 const translations = {
     pt: {
         // Navegação (COM A TAG <STRONG> ADICIONADA)
@@ -29,12 +27,12 @@ const translations = {
         // Projetos (substitua pelo texto real dos seus projetos)
         project_01_title: "Jogo: Autism World",
         project_01_desc: "Jogo psicoeducacional mobile desenvolvido em Flutter e Dart, com o objetivo de auxiliar no desenvolvimento cognitivo de crianças com TEA, trabalhando habilidades como memória, raciocínio lógico, entre outras. Este projeto foi apresentado como meu trabalho de conclusão de curso na graduação, e seu desenvolvimento foi documentado e registrado em um artigo que foi posteriormente publicado na revista REASE - Revista Ibero-Americana de Humanidades, Ciências e Educação.",
-        project_02_title: "projeto 02",
-        project_02_desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum id, inventore, veniam quidem tempora vero quas sit delectus reiciendis qui nulla odio ea ipsa dolor molestias necessitatibus aliquid ab.",
+        project_02_title: "FocusFLow: To-Do List",
+        project_02_desc: "FocusFlow é uma aplicação web moderna para gerenciamento de tarefas, projetada para otimizar a produtividade com uma interface limpa e intuitiva. Indo além de um simples to-do list, o projeto incorpora funcionalidades como persistência de dados no navegador via <code>localStorage</code>, reordenação de tarefas com arrastar e soltar, filtros dinâmicos e um tema claro/escuro. O desenvolvimento focará no gerenciamento de estado em JavaScript, manipulação avançada do DOM e na criação de uma experiência de usuário fluida e responsiva.",
         project_03_title: "Alura Books",
         project_03_desc: "Desenvolvido como parte da formação da Alura, o AluraBooks é um projeto que transforma uma página HTML estática em uma vitrine de livros interativa. Através de JavaScript, com funcionalidades para consumir dados de uma API simulada e renderizar os livros dinamicamente na tela. Foram utilizados métodos de array para criar filtros por categoria e calcular o valor total dos itens disponíveis, demonstrando na prática a poderosa capacidade do JavaScript de manipular o DOM e criar experiências de usuário responsivas.",
-        project_04_title: "projeto 04",
-        project_04_desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil dolore hic assumenda temporibus laboriosam doloremque, veritatis illum, commodi cupiditate quae placeat nesciunt totam facilis incidunt perferendis minima, reprehenderit voluptatum.",
+        project_04_title: "DataView: Dashboard",
+        project_04_desc: "DataView é um painel de controle interativo que consome e exibe dados em tempo real de uma API pública (neste caso, a API da CoinGecko para monitoramento de criptomoedas). O objetivo é transformar dados brutos em informações visuais e compreensíveis, utilizando gráficos dinâmicos (criados com a biblioteca <code>Chart.js</code>), tabelas e filtros interativos. Este projeto demonstrará competências essenciais como requisições assíncronas (async/await), manipulação de dados, visualização de dados e o gerenciamento de estados de interface, como loading e erro.",
         projects_link_text: "Ir para o projeto ",
 
         // Certificados

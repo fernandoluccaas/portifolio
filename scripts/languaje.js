@@ -1,5 +1,3 @@
-// language.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleButton = document.getElementById('lang-toggle-button');
 
@@ -11,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (translation) {
                 if (key.includes('placeholder')) {
                     element.placeholder = translation;
-                } else if (key.includes('_alt')) { // Lógica para traduzir 'alt' de imagens
+                } else if (key.includes('_alt')) { 
                     element.alt = translation;
                 }
                 else {
