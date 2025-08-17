@@ -137,6 +137,13 @@
     object-fit: cover;
 }
 
+.projetos-conteudo-image-max {
+    width: 50%; 
+    max-width: 500px;
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
 .projetos-conteudo-texto {
     width: 50%; 
 }

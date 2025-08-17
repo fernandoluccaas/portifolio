@@ -171,8 +171,8 @@
 .timeline-item::after {
     content: '';
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: var(--cor-secundaria);
     border-radius: 50%;
     border: 2px solid #0d1117;
@@ -185,7 +185,7 @@
     position: absolute;
     height: 2px;
     background-color: #ffffff;
-    top: 21px; 
+    top: 24px; 
 }
 
 .item-1 {
