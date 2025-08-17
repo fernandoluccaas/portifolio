@@ -24,7 +24,7 @@ const translations = {
         about_text_1: "Prazer, sou um desenvolvedor e bacharel em engenharia de computação, apaixonado por transformar problemas complexos em soluções de software eficientes e elegantes. Com uma base sólida em desenvolvimento front-end e mobile, além de conhecimentos em engenharia DevOps e infraestrutura de TI. Minha experiência vai desde a implementação de estruturas de dados e algoritmos até o desenvolvimento de aplicações interativas, como jogos e sistemas de gestão.",
         about_text_2: "Minha curiosidade me impulsiona a aprender continuamente e a explorar novas tecnologias. Atualmente, busco uma oportunidade para aplicar meu conhecimento técnico, colaborar com equipes inovadoras e contribuir para projetos desafiadores que gerem um impacto real.",
 
-        // Projetos (substitua pelo texto real dos seus projetos)
+        // Projetos
         project_01_title: "Jogo: Autism World",
         project_01_desc: "Jogo psicoeducacional mobile desenvolvido em Flutter e Dart, com o objetivo de auxiliar no desenvolvimento cognitivo de crianças com TEA, trabalhando habilidades como memória, raciocínio lógico, entre outras. Este projeto foi apresentado como meu trabalho de conclusão de curso na graduação, e seu desenvolvimento foi documentado e registrado em um artigo que foi posteriormente publicado na revista REASE - Revista Ibero-Americana de Humanidades, Ciências e Educação.",
         project_02_title: "ReactList: To-Do List",
@@ -77,14 +77,14 @@ const translations = {
         about_text_2: "My curiosity drives me to continuously learn and explore new technologies. I am currently seeking an opportunity to apply my technical knowledge, collaborate with innovative teams, and contribute to challenging projects that make a real impact.",
         
         // Projects
-        project_01_title: "project 01",
-        project_01_desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit consequuntur laborum, quia consectetur, in laboriosam ipsa magnam culpa quaerat necessitatibus similique optio eligendi, minus est. Asperiores accusantium distinctio repellendus?",
-        project_02_title: "project 02",
-        project_02_desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum id, inventore, veniam quidem tempora vero quas sit delectus reiciendis qui nulla odio ea ipsa dolor molestias necessitatibus aliquid ab.",
-        project_03_title: "project 03",
-        project_03_desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo nostrum nam ad cupiditate magnam vero molestiae fugit minus. A neque sunt dolorem, odit ex illum id ut exercitationem. Voluptates.",
-        project_04_title: "project 04",
-        project_04_desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil dolore hic assumenda temporibus laboriosam doloremque, veritatis illum, commodi cupiditate quae placeat nesciunt totam facilis incidunt perferendis minima, reprehenderit voluptatum.",
+        project_01_title: "Game: Autism World",
+        project_01_desc: "A psychoeducational mobile game developed in Flutter and Dart, aimed at assisting the cognitive development of children with ASD by working on skills like memory and logical reasoning. This project was presented as my undergraduate thesis, and its development was documented in an article later published in the REASE - Ibero-American Journal of Humanities, Sciences, and Education.",
+        project_02_title: "ReactList: To-Do List",
+        project_02_desc: "ReactList is a Trello-inspired interactive task management application with a drag-and-drop interface to organize workflows. The project features support for multiple projects, a dynamic theme (Light/Dark Mode), and progress bars that update automatically based on task status. Developed with React, styled-components, and the react-beautiful-dnd library.",
+        project_03_title: "AluraBooks",
+        project_03_desc: "Developed as part of the Alura curriculum, AluraBooks transforms a static HTML page into an interactive book showcase. It uses JavaScript to consume data from a mock API and dynamically render books on the screen. Array methods were used to create category filters and calculate the total value of available items, demonstrating JavaScript's power to manipulate the DOM and create responsive user experiences.",
+        project_04_title: "DataView: Dashboard",
+        project_04_desc: "DataView is an interactive dashboard that consumes and displays real-time data from a public API (in this case, the CoinGecko API for cryptocurrency monitoring). The goal is to transform raw data into visual and understandable information using dynamic charts (created with the <code>Chart.js</code> library), tables, and interactive filters. This project demonstrates key skills such as asynchronous requests (async/await), data manipulation, data visualization, and managing UI states like loading and error.",
         projects_link_text: "Go to project ",
 
         // Certificates

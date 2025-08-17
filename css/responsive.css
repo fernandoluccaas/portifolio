@@ -10,10 +10,13 @@
 
     .sessoes,
     .home,
-    .skills-container,
     .sobre-mim-container,
     .projetos {
         margin: 5% 5%;
+    }
+
+    .skills-container{
+        margin: 5% 3%;
     }
 
     .projetos-conteudo {
