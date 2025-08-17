@@ -1,0 +1,142 @@
+/* Media query para tablets e telas menores */
+@media (max-width: 1024px) {
+    :root {
+        --fonte-tamanho-titulo: 2rem;
+    }
+
+    nav {
+        padding: 1.25rem 2.5rem;
+    }
+
+    .sessoes,
+    .home,
+    .skills-container,
+    .sobre-mim-container,
+    .projetos {
+        margin: 5% 5%;
+    }
+
+    .projetos-conteudo {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projetos-conteudo-image,
+    .projetos-conteudo-image-max,
+    .projetos-conteudo-texto {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Media query para dispositivos mobile */
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+    }
+    
+    .menu {
+        position: absolute;
+        top: 4.375rem;
+        right: 0;
+        background-color: #282C33;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        padding-top: 1.25rem;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        margin: 1rem 0;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 6.25rem;
+        gap: 2rem;
+    }
+
+    .apresentacao {
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-botoes {
+        justify-content: center;
+        margin: 1.25rem 0 0 0;
+    }
+
+    .imagem-home {
+        order: -1;
+    }
+
+    .foto-perfil {
+        width: 12.5rem;
+        height: auto;
+    }
+
+    #asset1-home {
+        top: 3.125rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 9.375rem;
+    }
+
+    .sobre-mim-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-mim-conteudo img {
+        width: 50%;
+        margin-bottom: 1.25rem;
+    }
+
+    .timeline-container {
+        height: 23.0rem; /* Adicione esta linha */
+    }
+
+    .timeline-container::before,
+    .timeline-item::before,
+    .timeline-item::after {
+        display: none;
+    }
+
+    .timeline-item {
+        position: relative;
+        width: 100%;
+        left: 0 !important;
+        right: 0 !important;
+        top: auto !important;
+        margin-bottom: 2.5rem;
+        text-align: center !important;
+        padding: 0 1.25rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .contact-info__image {
+        margin: 0 auto 1.5rem auto;
+    }
+    .contact-section {
+        padding: 1.25rem;
+    }
+}

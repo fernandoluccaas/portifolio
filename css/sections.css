@@ -67,7 +67,7 @@
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    margin: 0 15%;
+    margin: 0 20%;
 }
 
 .sobre-mim-header {
@@ -106,7 +106,7 @@
 .projetos {
     display: flex;
     flex-direction: column;
-    margin: 5% 15%;
+    margin: 0 15% 5% 15%;
 }
 
 .projetos-container {

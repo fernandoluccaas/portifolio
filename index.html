@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>Fernando.dev</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +18,13 @@
                 <span>Fernando.dev</span>
             </a>
 
-            <ul class="menu">
+            <button class="menu-hamburger" id="menu-hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-linha"></span>
+                <span class="hamburger-linha"></span>
+                <span class="hamburger-linha"></span>
+            </button>
+
+            <ul class="menu" id="menu-nav">
                 <li> <a class="menu-links" href="#home" data-translate-key="nav_home"><strong class="menu-destaque">#</strong>Home</a></li>
                 <li> <a class="menu-links" href="#skills" data-translate-key="nav_skills"><strong class="menu-destaque">#</strong>Skills</a></li>
                 <li> <a class="menu-links" href="#sobre-mim" data-translate-key="nav_about"><strong class="menu-destaque">#</strong>Sobre Mim</a></li>
@@ -98,7 +105,6 @@
         <h2 class="titulo-sessoes" data-translate-key="experiencias_title"><strong class="menu-destaque">#</strong>Experiências</h2>
         <hr class="line">
     </section>
-    <section class="experiencias">
     <div class="timeline-container reveal">
         <div class="timeline-item item-1">
             <div class="timeline-content">
@@ -122,7 +128,6 @@
             </div>
         </div>
     </div>
-    </section>
     
     <section class="projetos reveal" id="projetos">
         <div class="section-header">
@@ -169,19 +174,6 @@
                     </a>
                 </div>
             </div>
-
-            <div class="projetos-conteudo reveal">
-                <img src="./assets/projetos/autismWorld.svg" alt="imagem ilustrativa do projeto" class="projetos-conteudo-image">
-                <div class="projetos-conteudo-texto">
-                    <h1 class="projetos-conteudo-texto-contador">04</h1>
-                    <h2 class="projetos-conteudo-texto-titulo" data-translate-key="project_04_title">projeto 04</h2>
-                    <p class="projetos-conteudo-texto-paragrafo" data-translate-key="project_04_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil dolore hic assumenda temporibus laboriosam doloremque, veritatis illum, commodi cupiditate quae placeat nesciunt totam facilis incidunt perferendis minima, reprehenderit voluptatum.</p>
-                    <a href="https://github.com/brvcelose/antedeguemon" target="_blank" class="projetos-conteudo-texto-link" data-translate-key="projects_link_text">
-                        Ir para o projeto 
-                        <img src="./assets/seta.png" alt="ir para projeto">
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -217,7 +209,7 @@
     </div>
 
     <div class="certificados-botao">
-        <a class="botao-social" href="https://github.com/fernandoluccaas" target="_blank" data-translate-key="certificates_button">
+        <a class="botao-social" href="https://drive.google.com/drive/folders/13omsmdHOhsGMuosODTyRDh8H4tRLNKZW?usp=sharing" target="_blank" data-translate-key="certificates_button">
             Ver mais Certificados
             <img src="./assets/seta.png">
         </a>
@@ -273,8 +265,10 @@
     <script src="./scripts/carrossel.js"></script>
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/scroll.js"></script> 
+    <script src="./scripts/scroll-spy.js"></script> </body>
 
     <script src="./scripts/translations.js"></script>
     <script src="./scripts/languaje.js"></script> 
+    <script src="./scripts/mobile-menu.js"></script>
     </body>
 </html>
