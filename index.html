@@ -241,7 +241,7 @@
                 </div>
             </div>
             
-            <form class="contact-form" action="URL_PARA_ENVIAR_O_FORMULARIO" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/xldlkkkq" method="POST">
                 <div class="form-group">
                     <label for="name" class="visually-hidden">Nome</label>
                     <input type="text" id="name" name="name" placeholder="Nome" required data-translate-key="form_name_placeholder">
@@ -262,10 +262,21 @@
         </div>
     </section>
 
+    <div id="modal-overlay" class="modal-overlay"></div>
+    <div id="success-modal" class="success-modal">
+        <div class="modal-content">
+            <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            <h2 class="modal-title">Solicitação Enviada!</h2>
+            <p class="modal-message">Obrigado por entrar em contato. Retornarei em breve.</p>
+            <button id="close-modal-btn" class="modal-close-btn">Fechar</button>
+        </div>
+    </div>
+
     <script src="./scripts/carrossel.js"></script>
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/scroll.js"></script> 
     <script src="./scripts/scroll-spy.js"></script> </body>
+    <script src="./scripts/form-validation.js"></script>
 
     <script src="./scripts/translations.js"></script>
     <script src="./scripts/languaje.js"></script> 
