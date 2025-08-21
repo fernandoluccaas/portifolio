@@ -61,6 +61,12 @@
     color: var(--cor-primaria);
 }
 
+.titulo-sessoes {
+    font-family: var(--fonte-family);
+    font-size: var(--fonte-tamanho-titulo);
+    color: var(--cor-terciaria);
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +107,12 @@
     font-size: 20px;
     color: var(--cor-auxiliar);
     font-weight: var(--fonte-peso-subtitulo);
+}
+
+.titulo-experiencias{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
 }
 
 .projetos {

@@ -16,6 +16,7 @@ const translations = {
         // Títulos das Seções (COM A TAG <STRONG> ADICIONADA)
         skills_title: '<strong class="menu-destaque">#</strong>Skills',
         about_title: '<strong class="menu-destaque">#</strong>Sobre Mim',
+        experiencias_title: "Minhas Experiências Profissionais",
         projects_title: '<strong class="menu-destaque">#</strong>Projetos',
         certificates_title: '<strong class="menu-destaque">#</strong>Certificados',
         contact_title: '<strong class="menu-destaque">#</strong>Contato',
@@ -23,6 +24,18 @@ const translations = {
         // Sobre Mim
         about_text_1: "Prazer, sou um desenvolvedor e bacharel em engenharia de computação, apaixonado por transformar problemas complexos em soluções de software eficientes e elegantes. Com uma base sólida em desenvolvimento front-end e mobile, além de conhecimentos em engenharia DevOps e infraestrutura de TI. Minha experiência vai desde a implementação de estruturas de dados e algoritmos até o desenvolvimento de aplicações interativas, como jogos e sistemas de gestão.",
         about_text_2: "Minha curiosidade me impulsiona a aprender continuamente e a explorar novas tecnologias. Atualmente, busco uma oportunidade para aplicar meu conhecimento técnico, colaborar com equipes inovadoras e contribuir para projetos desafiadores que gerem um impacto real.",
+
+        // Experiências
+        experiencias_title: '<strong class="menu-destaque">#</strong>Experiências',
+        experience_1_title: "Professor de ensino médio técnico",
+        experience_1_desc: "Atuo como professor da base técnica do ensino médio de informática na rede estadual de ensino (IEMA)",
+        experience_1_date: "Agosto de 2025 - Atual",
+        experience_2_title: "Jovem Tech",
+        experience_2_desc: "Faço parte do programa de capacitação Jovem Tech, oferecido pela FAPEMA em parceria com o Grupo Mateus e empresas que compõem o Porto do Itaqui",
+        experience_2_date: "Maio de 2025 - Atual",
+        experience_3_title: "Técnico de redes",
+        experience_3_desc: "Atuei como técnico de redes e infraestrutura de TI no Sistema FIEMA, onde desenvolvi atividade de implementação, monitoramento e manutenção de ativos de redes, entre outras funções",
+        experience_3_date: "Abril de 2024 - Fevereiro de 2025",
 
         // Projetos
         project_01_title: "Jogo: Autism World",
@@ -68,6 +81,7 @@ const translations = {
         // Section Titles (WITH THE <STRONG> TAG ADDED)
         skills_title: '<strong class="menu-destaque">#</strong>Skills',
         about_title: '<strong class="menu-destaque">#</strong>About Me',
+        experiencias_title: "My Professional Experiences",
         projects_title: '<strong class="menu-destaque">#</strong>Projects',
         certificates_title: '<strong class="menu-destaque">#</strong>Certificates',
         contact_title: '<strong class="menu-destaque">#</strong>Contact',
@@ -76,6 +90,18 @@ const translations = {
         about_text_1: "I'm a developer and a Computer Engineering graduate, passionate about transforming complex problems into efficient and elegant software solutions. With a solid foundation in front-end and mobile development, as well as knowledge in DevOps engineering and IT infrastructure. My experience ranges from implementing data structures and algorithms to developing interactive applications, such as games and management systems.",
         about_text_2: "My curiosity drives me to continuously learn and explore new technologies. I am currently seeking an opportunity to apply my technical knowledge, collaborate with innovative teams, and contribute to challenging projects that make a real impact.",
         
+        // Experiences
+        experiencias_title: '<strong class="menu-destaque">#</strong>Experiences',
+        experience_1_title: "Technical High School Teacher",
+        experience_1_desc: "I work as a teacher for the technical base of high school computer science in the state education system (IEMA)",
+        experience_1_date: "August 2025 - Present",
+        experience_2_title: "Jovem Tech",
+        experience_2_desc: "I am part of the Jovem Tech training program, offered by FAPEMA in partnership with Grupo Mateus and companies that are part of the Port of Itaqui",
+        experience_2_date: "May 2025 - Present",
+        experience_3_title: "Network Technician",
+        experience_3_desc: "I worked as a network and IT infrastructure technician at Sistema FIEMA, where I carried out activities of implementation, monitoring, and maintenance of network assets, among other functions",
+        experience_3_date: "April 2024 - February 2025",
+
         // Projects
         project_01_title: "Game: Autism World",
         project_01_desc: "A psychoeducational mobile game developed in Flutter and Dart, aimed at assisting the cognitive development of children with ASD by working on skills like memory and logical reasoning. This project was presented as my undergraduate thesis, and its development was documented in an article later published in the REASE - Ibero-American Journal of Humanities, Sciences, and Education.",

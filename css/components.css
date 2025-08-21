@@ -156,8 +156,8 @@
     position: relative; 
     width: 100%;
     max-width: 56.25rem;
-    margin: 0 auto;
-    height: 34.5rem; 
+    margin: 5% auto;
+    height: 37.5rem; 
 }
 
 .timeline-container::before {
