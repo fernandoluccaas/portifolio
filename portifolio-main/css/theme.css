@@ -1,0 +1,59 @@
+body[data-theme="light"] {
+    --cor-primaria: #282C33; 
+    --cor-secundaria: #8A2BE2; 
+    --cor-terciaria: #188654; 
+    --cor-auxiliar: #4a4a4a; 
+    background-color: #F8F9FA;
+}
+
+body[data-theme="light"] header {
+    background-color: #F8F9FA;
+}
+
+body[data-theme="light"] .logo {
+    color: var(--cor-secundaria); 
+}
+
+body[data-theme="light"] .botao-social {
+    color: var(--cor-terciaria);
+}
+
+body[data-theme="light"] .botao-social:hover {
+    background-color: var(--cor-secundaria);
+    color: #FFFFFF;
+}
+
+.moon-icon { display: none; }
+.sun-icon { display: block; }
+
+body:not([data-theme="light"]) .theme-toggle-button .sun-icon { display: none; }
+body:not([data-theme="light"]) .theme-toggle-button .moon-icon { display: block; }
+
+body[data-theme="light"] .projetos-conteudo {
+    border-color: var(--cor-secundaria);
+}
+
+body[data-theme="light"] .contact-container {
+    background-color: #e9ecef; 
+}
+
+body[data-theme="light"] .contact-info__heading {
+    color: #212529;
+}
+
+body[data-theme="light"] .contact-form input,
+body[data-theme="light"] .contact-form textarea {
+    background-color: #FFFFFF;
+    border-color: #ced4da;
+    color: #212529;
+}
+
+body[data-theme="light"] .social-link {
+    background-color: #FFFFFF;
+    color: #212529;
+}
+
+body[data-theme="light"] .social-link:hover {
+    background-color: var(--cor-secundaria);
+    color: #FFFFFF;
+}
